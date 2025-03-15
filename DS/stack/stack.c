@@ -1,8 +1,8 @@
 #include "stack.h"
 #include<stdio.h>
 void push(struct Stack *ptrStack, int data){
-    //code implementation
-    //
+   
+    
     if(ptrStack->top==4){
         printf("Stack Overflow\n");
         return;
