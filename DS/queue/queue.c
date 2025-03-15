@@ -28,7 +28,7 @@ void enqueue(struct Queue* queue, int item) {
     if (isEmpty(queue)) {
         queue->front = queue->rear = 0; // First element
     } else {
-        queue->rear = (queue->rear + 1) % queue->capacity; // Move rear circularly
+        queue->rear = (queue->rear + 1) % queue->capacity; 
     }
     queue->array[queue->rear] = item;
     printf("%d enqueued to queue.\n", item);
